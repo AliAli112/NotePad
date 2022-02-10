@@ -37,6 +37,7 @@ export class NoteServiceService {
   public editNote(id: string, title: string, body: string){
     this.Notes.find(note => note.id === id).title = title;
     this.Notes.find(note => note.id === id).body = body;
+    this.Notes.find(note => note.id === id).dateModified = new Date();
     this.router.navigate(['details/' + id]);
   }
 }

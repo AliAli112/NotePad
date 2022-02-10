@@ -9,8 +9,14 @@ import { Note } from '../../misc/Note';
 export class SavedNotesComponent implements OnInit {
   @Input() savedNote: Note;
 
-  constructor() { }
+  constructor() {
+
+  }
 
   ngOnInit() {}
 
+  public isNoteModified(): boolean{
+    return this.savedNote.dateModified !== undefined;
+    console.log(this.savedNote.dateModified);
+  }
 }
