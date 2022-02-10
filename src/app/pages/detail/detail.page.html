@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="tabs/my-notes"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Detail</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)= "onDelete(loadedNote.id)">
+        <ion-icon name="trash"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <main>
+    <div class="container">
+      <div class="title">
+        {{ loadedNote.title }}
+      </div>
+      <div class="content">
+        {{ loadedNote.body }}
+      </div>
+    </div>
+    <ion-fab vertical="bottom" horizontal="end" slot="fixed" >
+      <ion-fab-button [routerLink]= "['/edit-note/'+ loadedNote.id]">
+        <ion-icon name="create"></ion-icon>
+      </ion-fab-button>
+    </ion-fab>
+  </main>
+</ion-content>

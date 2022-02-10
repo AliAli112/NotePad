@@ -1,0 +1,23 @@
+h6{
+  font-size: 12px;
+}
+
+ion-item{
+  --background: #d2d2ff;
+  --border-color: #000000;
+  --border-width: 2px;
+  --border-style: solid;
+  --border-radius: 10px;
+  --width: 50%;
+  --margin: 10px;
+
+  main{
+    display: flex;
+    flex-direction: column;
+
+      .n-container{
+        --border-color: #000000;
+      }
+  }
+}
+

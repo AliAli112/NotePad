@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="tabs/my-notes"></ion-back-button>
+    </ion-buttons>
+    <ion-title>edit-note</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)= "onCancel()">
+        <ion-icon name="close"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <main>
+    <div class="container">
+      <div class="n-title" >
+        <ion-item lines="full">
+          <ion-input placeholder="Title" [(ngModel)]= "notetitle"></ion-input>
+        </ion-item>
+      </div>
+      <div class="n-body">
+        <ion-textarea placeholder="Type here" rows="10" [(ngModel)]= "notebody"  ></ion-textarea>
+      </div>
+    </div>
+    <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+      <div *ngIf= "canBeEdited()">
+        <ion-fab-button (click)= "onSave()">
+          <ion-icon name="checkmark"></ion-icon>
+        </ion-fab-button>
+      </div>
+    </ion-fab>
+  </main>
+</ion-content>

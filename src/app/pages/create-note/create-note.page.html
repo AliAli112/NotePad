@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>createNote</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)= "onDelete()">
+        <ion-icon name="trash"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <main>
+    <div class="n-title" >
+      <ion-item lines="full">
+        <ion-input placeholder="Title" [(ngModel)]= "notetitle"></ion-input>
+      </ion-item>
+    </div>
+    <div class="n-body">
+      <ion-textarea [(ngModel)]= "notebody"></ion-textarea>
+    </div>
+    <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+      <div *ngIf= "canBeSaved()">
+        <ion-fab-button (click)= "onSave()">
+          <ion-icon name="checkmark"></ion-icon>
+        </ion-fab-button>
+      </div>
+    </ion-fab>
+  </main>
+</ion-content>

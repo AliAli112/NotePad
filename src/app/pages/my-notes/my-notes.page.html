@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Notes</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="n-empty" *ngIf= "isNotesEmpty()">
+    <p>Your Notes are Empty! Click on the '+' to populate.</p>
+  </div>
+  <div class="container">
+    <ion-list>
+      <app-saved-notes *ngFor= "let note of notes"
+        [savedNote]= "note" [routerLink]= "['/details/'+ note.id]"></app-saved-notes>
+    </ion-list>
+  </div>
+
+
+</ion-content>
