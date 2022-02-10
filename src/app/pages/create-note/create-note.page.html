@@ -1,6 +1,6 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>createNote</ion-title>
+    <ion-title>New Note</ion-title>
     <ion-buttons slot="end">
       <ion-button (click)= "onDelete()">
         <ion-icon name="trash"></ion-icon>
@@ -17,7 +17,7 @@
       </ion-item>
     </div>
     <div class="n-body">
-      <ion-textarea [(ngModel)]= "notebody"></ion-textarea>
+      <ion-textarea placeholder="Type here" [(ngModel)]= "notebody" rows="10"></ion-textarea>
     </div>
     <ion-fab vertical="bottom" horizontal="end" slot="fixed">
       <div *ngIf= "canBeSaved()">
