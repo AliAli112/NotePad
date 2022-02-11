@@ -17,8 +17,6 @@ ion-content{
   width: 100%;
   --background: #1E2746;
   main{
-    //background: #0c0c69;
-    //background: #1E2746;
     height: 100%;
 
     .n-title{
@@ -30,7 +28,6 @@ ion-content{
         --border-radius: 20px;
         margin: 0px 4.9%;
         ion-input{
-          //--background: #0c0c69;
           --placeholder-color: #fff;
           --placeholder-opacity: 1;
           caret-color: #fff;
