@@ -12,8 +12,8 @@ export class MyNotesPage implements OnInit {
   constructor(
     private noteservice: NoteServiceService
   ) {
-    this.notes = this.noteservice.getAllNotes();
-  }
+      this.notes = this.noteservice.getAllNotes();
+    }
 
   ngOnInit() {
   }

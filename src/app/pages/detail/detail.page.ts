@@ -17,11 +17,9 @@ export class DetailPage implements OnInit {
     ) {
       this.activatedRoute.paramMap.subscribe(paramMap => {
         if (!paramMap.has('noteId')){
-          console.log(paramMap);
           return;
       }
       const noteid = paramMap.get('noteId');
-      console.log(noteid);
       this.noteid = noteid;
       this.loadedNote = this.noteService.getthisNote(noteid);
       });
@@ -32,7 +30,6 @@ export class DetailPage implements OnInit {
   }
 
   onDelete(id: string){
-    console.log(id);
     this.noteService.deleteNote(id);
   }
 

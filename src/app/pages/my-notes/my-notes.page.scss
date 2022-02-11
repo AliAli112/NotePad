@@ -18,7 +18,9 @@ ion-content{
        .row{
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: start;
+        padding-left: 10px;
+        padding-right: 10px;
         .col{
 
         }
