@@ -8,8 +8,8 @@ import { Note } from '../../misc/Note';
 })
 export class SavedNotesComponent implements OnInit {
   @Input() savedNote: Note;
-  backgrounds: string[] = ['../../../assets/image/nightsky.png',
-    '../../../assets/image/nightsky2.png','../../../assets/image/nightsky3.png'];
+  // backgrounds: string[] = ['../../../assets/image/nightsky.png',
+  //   '../../../assets/image/nightsky2.png','../../../assets/image/nightsky3.png'];
   randomInt = 0;
   constructor() {
   }

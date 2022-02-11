@@ -13,15 +13,16 @@ h6{
 
 ion-item{
   max-width: 360px;
-  --background: url('../../../assets/image/nightsky.png'); //0c0c69
-  --border-color: #a0a0a0;
+  --background: #1E2746; //url('../../../assets/image/nightsky.png'); //0c0c69
+  //--border-color: #a0a0a0;
   //--background: #485461;
   //background-image: linear-gradient(315deg, #485461 0%, #28313b 74%);
   --border-width: 1px;
   --border-style: solid;
   --border-radius: 10px 30px 10px 10px;
+  filter: drop-shadow(0px 0px 15px rgba(0, 0, 0, 0.25));
   // --inner-padding-top: 10px;
-  margin: 10px;
+  margin: 10px 4.9%;
 
   main{
     display: flex;

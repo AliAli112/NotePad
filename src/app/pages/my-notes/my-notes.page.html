@@ -10,8 +10,10 @@
   </div>
   <div class="container">
     <ion-list>
-      <app-saved-notes *ngFor= "let note of notes"
+      <div class="row">
+        <app-saved-notes class="col" *ngFor= "let note of notes"
         [savedNote]= "note" [routerLink]= "['/details/'+ note.id]"></app-saved-notes>
+      </div>
     </ion-list>
   </div>
 

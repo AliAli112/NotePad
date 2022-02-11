@@ -1,15 +1,28 @@
 
 ion-toolbar{
-  --background: #000;
+  --background: #1E2746;
   --color: #fff;
 }
 
+.row > *{
+  flex: 1 0 150px;
+}
+
 ion-content{
-
+  background-color: #151D33;
   .container{
-
+    height: 100%;
      ion-list{
-       background-color: #000;
+       height: 100%;
+       background-color: #151D33;
+       .row{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        .col{
+
+        }
+       }
      }
   }
 }

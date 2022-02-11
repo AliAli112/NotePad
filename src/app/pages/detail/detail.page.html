@@ -3,7 +3,7 @@
     <ion-buttons slot="start">
       <ion-back-button defaultHref="tabs/my-notes"></ion-back-button>
     </ion-buttons>
-    <ion-title>Detail</ion-title>
+    <ion-title>Details</ion-title>
     <ion-buttons slot="end">
       <ion-button (click)= "onDelete(loadedNote.id)">
         <ion-icon name="trash"></ion-icon>
@@ -16,10 +16,10 @@
   <main>
     <div class="container">
       <div class="title">
-        {{ loadedNote.title }}
+        <h4><strong>{{ loadedNote.title }}</strong></h4>
       </div>
       <div class="content">
-        {{ loadedNote.body }}
+        <p>{{ loadedNote.body }}</p>
       </div>
     </div>
     <ion-fab vertical="bottom" horizontal="end" slot="fixed" >

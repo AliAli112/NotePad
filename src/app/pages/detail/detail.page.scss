@@ -1,0 +1,33 @@
+h4{
+  font-size: 22px;
+  color: rgb(240, 240, 240);
+}
+p{
+  font-size: 15px;
+  color: rgb(240, 240, 240);
+}
+
+ion-toolbar{
+  --background: #1E2746;
+  --color: #fff;
+}
+
+
+ion-content{
+  --background: #151D33;;
+  main{
+    padding: 20px;
+    .container{
+
+      .title{
+
+
+      }
+
+      .content{
+
+
+      }
+    }
+  }
+}

@@ -9,15 +9,16 @@
 }
 
 ion-toolbar{
-  --background: #000;
+  --background: #1E2746;;
   --color: #fff;
 }
 
 ion-content{
   width: 100%;
+  --background: #1E2746;
   main{
     //background: #0c0c69;
-    background: #000;
+    //background: #1E2746;
     height: 100%;
 
     .n-title{
@@ -27,6 +28,7 @@ ion-content{
         --border-width: 2px;
         --border-style: dotted;
         --border-radius: 20px;
+        margin: 0px 4.9%;
         ion-input{
           //--background: #0c0c69;
           --placeholder-color: #fff;
@@ -39,6 +41,8 @@ ion-content{
 
     .n-body{
       height: 100%;
+      margin-left: 4.9%;
+      margin-right: 4.9%;
       ion-textarea{
         height: 100%;
         --border-color: #fff;
@@ -50,7 +54,7 @@ ion-content{
         --placeholder-color: #fff;
         --placeholder-opacity: 1;
         --color: #fff;
-  }
+      }
     }
   }
 }

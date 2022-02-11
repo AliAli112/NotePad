@@ -1,0 +1,56 @@
+ion-toolbar{
+  --background: #1E2746;;
+  --color: #fff;
+}
+
+ion-content{
+  width: 100%;
+  --background: #1E2746;
+
+  main{
+    height: 100%;
+    padding-top: 10px;
+
+
+    .container{
+      height: 100%;
+      padding-bottom: 10px;
+      .n-title{
+        ion-item{
+          --background: url('../../../assets/image/nightsky.png');
+          --border-color: #fff;
+          --border-width: 2px;
+          --border-style: dotted;
+          --border-radius: 20px;
+          margin: 0px 4.9%;
+          ion-input{
+            //--background: #0c0c69;
+            --placeholder-color: #fff;
+            --placeholder-opacity: 1;
+            caret-color: #fff;
+            color: #fff;
+          }
+        }
+      }
+
+      .n-body{
+        height: 100%;
+        margin-left: 4.9%;
+        margin-right: 4.9%;
+        ion-textarea{
+          height: 100%;
+          --border-color: #fff;
+          --border-width: 2px;
+          border-style: dotted;
+          border-radius: 20px;
+          padding: 10px;
+          --background: url('../../../assets/image/nightsky.png');
+          --placeholder-color: #fff;
+          --placeholder-opacity: 1;
+          --color: #fff;
+        }
+      }
+    }
+
+  }
+}
